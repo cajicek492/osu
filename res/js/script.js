@@ -41,6 +41,7 @@ function setPointClick(element) {
     } else{
         let timeEnd = performance.now();
         let result = timeEnd - timeStart;
+        result = result.toFixed(2);
         timeInfo.innerText = `Time: ${result}ms`
         timeStart =performance.now();
     }
